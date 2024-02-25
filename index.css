@@ -27,7 +27,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    padding: 24px 8px 16px 8px;
 }
 
 .video_text_container > h4{
@@ -58,7 +58,7 @@ body{
     padding: 8px;
 }
 
-@media (min-width: 600px){
+@media (min-width: 1200px){
     .grid_container{
         grid-template-columns: repeat(3, minmax(200px, 500px));
         grid-template-rows: repeat(auto-fit, minmax(160px, 1fr));
@@ -72,17 +72,26 @@ body{
     flex-direction: column;
     text-align: left;
     border-bottom: 1px solid hsl(0, 0%, 50%);
-    margin-bottom: 16px;
+    margin-bottom: calc(12pt + 0.5vw);
     font-size: calc(12pt + 0.5vw);
+    overflow:hidden;
 }
 
 .project_card h3{
     font-weight: 400;
-
+    background-color: #0B0C10;
+    z-index: 1000;
 }
 
 .project_card img{
+    display:block;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
 
+.project_card img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 .footer_container{
@@ -108,8 +117,9 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 120px 0 160px 0;
     color: white;
+    font-size: 32px;
 }
 
 .contact_button{
