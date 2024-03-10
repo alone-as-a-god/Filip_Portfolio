@@ -74,11 +74,16 @@ a {
     padding: 50px 0 96px 0;
 }
 
+.video_container video{
+    width: 100%;
+    max-width: 1800px;
+    height: auto;
+}
+
 .video_container img{
     width: 100%;
     max-width: 1800px;
     height: auto;
-
 }
 
 .grid_container{
@@ -94,7 +99,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 120px 0 160px 0;
+    padding: 120px 0;
     color: white;
     font-size: 32px;
 }

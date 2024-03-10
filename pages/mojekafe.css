@@ -19,8 +19,28 @@
     margin-top: 8px;
 }
 
+.visit_container h2{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+}
+
+.visit_container img{
+    width: 26px;
+    height: 26px;
+}
+
 .visit_container:hover{
     cursor: pointer;
+
+}
+
+.link_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    gap: 12px;
 }
 
 #image1{
