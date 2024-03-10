@@ -4,7 +4,7 @@
     max-width: 1400px;
     display:grid;
     grid-template-columns: minmax(1fr, 33%) minmax(1fr, 33%) minmax(1fr, 33%);
-    grid-template-rows: minmax(1fr, 50%) minmax(1fr, 50%);
+    grid-template-rows: minmax(auto, 50%) minmax(auto, 50%);
     gap: 16px;
 }
 
